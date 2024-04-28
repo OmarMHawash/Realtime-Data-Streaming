@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tweets {% if title %} - {{ title }} {% endif %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body>
+  <div class="welcome">
+    <h1>Welcome to tweets Streaming!</h1>
+  </div>
+  <div class="charts">
+    <div class="chart">
+      <h2>Pie Chart</h2>
+      <canvas id="pie-chart"></canvas>
+    </div>
+    <div class="chart">
+      <h2>Trend Chart</h2>
+      <form id="query-form">
+        <label for="query">query:</label><br>
+        <input type="text" id="query" name="query">
+        <input type="submit" value="Search">
+      </form>
+      <canvas id="trend-chart"></canvas>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</html>
+<!DOCTYPE html>
