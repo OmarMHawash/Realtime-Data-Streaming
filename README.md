@@ -1,7 +1,12 @@
 This application is designed to stream tweets in real-time, process, and log the data using a modern tech stack that includes Zookeeper, Kafka, and Flask.
 
-## Preview:
+## Overview:
 
+![overview](docs/data-streaming.png)
+
+## demo:
+
+theres a demo video in the docs folder
 ![demo](docs/example.jpg)
 
 ## Used Technologies
